@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 500vh;
+  width: 100%;
+}
+.navbar {
+  text-align: right;
+  z-index: 999;
+}
+ .navbar-nav {
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  right: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 999;
+} 
+.nav-item {
+  list-style: none;
+  display: block;
+  opacity: 0;
+  top:0;
+  position: relative;
+}
+.nav-item a{
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background: #72aee6a6;
+  min-width: 150px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 5px;
+
+
+}
+button#btn {
+  color: #fff;
+  background: transparent;
+  font-size: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  top: 30px;
+  line-height: .8;
+  right: 30px;
+  position: absolute;
+  outline: navajowhite;
+  cursor: pointer;
+  z-index: 999;
+
+} 
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+#large-header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-title,.sub-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 5vw;
+  color: #9ec2e6;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.sub-title {
+  position: absolute;
+  top: 70%;
+  font-weight: 200;
+  font-size: 2vw;
+  color: #72aee6;
+
+}
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+.main-title .thin {
+  font-weight: 200;
+}
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}
